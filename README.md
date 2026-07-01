@@ -75,9 +75,6 @@ This project was built with AI assistance per the exercise guidelines.
 | Unit tests | Anthropic | claude-sonnet-4-6 |
 | README structure | Anthropic | claude-sonnet-4-6 |
 
-All code was reviewed, understood, and manually applied by the developer.
-Each file was written step by step with full comprehension of the logic.
-
 ---
 
 ## Decisions & Tradeoffs
