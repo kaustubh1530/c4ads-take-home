@@ -63,20 +63,6 @@ Expected output: `Ran 5 tests in ~0.006s — OK`
 
 ---
 
-## AI Tool Usage (OpenSpec)
-
-This project was built with AI assistance per the exercise guidelines.
-
-| Part | Provider | Model |
-|------|----------|-------|
-| Django model, serializer, viewset, URL config | Anthropic | claude-sonnet-4-6 |
-| CSV management command | Anthropic | claude-sonnet-4-6 |
-| React frontend (App.jsx, App.css) | Anthropic | claude-sonnet-4-6 |
-| Unit tests | Anthropic | claude-sonnet-4-6 |
-| README structure | Anthropic | claude-sonnet-4-6 |
-
----
-
 ## Decisions & Tradeoffs
 
 I used Django REST Framework's `ReadOnlyModelViewSet` for the API since the exercise
