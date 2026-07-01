@@ -57,6 +57,7 @@ function App() {
               <option key={c} value={c}>{c}</option>
             ))}
           </select>
+          {country && <span className="active-filter">✓ {country}</span>}
         </div>
 
         <div className="filter-group">
@@ -66,12 +67,24 @@ function App() {
             <option value="Individual">Individual</option>
             <option value="Organization">Organization</option>
           </select>
+          {entityType && <span className="active-filter">✓ {entityType}</span>}
         </div>
 
-        <button onClick={() => { setCountry(''); setEntityType('') }}>
-          Clear Filters
-        </button>
+        <div className="filter-group">
+          <label>&nbsp;</label>
+          <button onClick={() => { setCountry(''); setEntityType('') }}>
+            Clear Filters
+          </button>
+        </div>
       </div>
+
+      {(country || entityType) && (
+        <div className="active-filters-bar">
+          <span>Filtering by:</span>
+          {country && <span className="tag">{country}</span>}
+          {entityType && <span className="tag">{entityType}</span>}
+        </div>
+      )}
 
       {loading && <p className="status">Loading...</p>}
       {error && <p className="status error">Error: {error}</p>}
@@ -115,5 +128,4 @@ function App() {
     </div>
   )
 }
-
 export default App

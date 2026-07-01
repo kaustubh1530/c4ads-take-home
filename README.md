@@ -1,4 +1,4 @@
-# C4ADS Take-Home Exercise — Sanctioned Entities Viewer
+# C4ADS Take-Home Exercise - Sanctioned Entities Viewer
 
 A full-stack web feature built with Django REST Framework (backend) and React (frontend).
 It serves fictitious sanctioned entity data from a CSV, exposes a filterable REST API,
